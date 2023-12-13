@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>STD Crud</title>
+</head>
+<body>
+  <h1 class="bg-success text-center p-3 mb-3">CRUD</h1>
+   <div class="container mt-4">
+    <div class="row">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <form id="signupform">
+              <div class="form-group">
+                <label for="fname">First Name*</label>
+                <input type="text" required id="fname" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name*</label>
+                <input type="text" required id="lname" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="text" required id="email" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="contact">contact*</label>
+                <input type="text" required id="contact" class="form-control">
+              </div>
+              <div class="text-right">
+                <button class="btn btn-primary">Add Student</button>
+              </div>
+            </form>
+          </div>
+        </div>
+          
+      </div>
+      <div class="col-md-6">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Sr No</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody id="stdId">
+            <!-- <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+   </div>
+   <script src="./assets/js/app.js"></script>
+</body>
+</html>
+
+
